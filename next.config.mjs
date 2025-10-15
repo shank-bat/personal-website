@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // 👈 this enables static export
+  output: 'export',
+  basePath: '/personal-website',
+  assetPrefix: '/personal-website/',
   eslint: {
     ignoreDuringBuilds: true,
   },
