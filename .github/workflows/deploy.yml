@@ -31,16 +31,9 @@ jobs:
 
       - name: Build Next.js
         run: npm run build
-            - name: Build Next.js
-        run: npm run build
 
       - name: Verify export folder
         run: ls -al out
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
